@@ -1,7 +1,9 @@
 body{
   padding-left: 100px;
   padding-right: 100px;
+  position: relative;
 }
+
 
 #box1{
   position: relative;
@@ -16,6 +18,45 @@ body{
   margin-top: 60px;
 }
 
+#box2{
+  position: relative;
+  background-image: url(../img/marine.png);
+  background-size: cover;
+  border-radius: 200px;
+  width: 80vw;
+  height: 80vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#box3{
+  position: relative;
+  background-image: url(../img/desert.png);
+  background-size: cover;
+  border-radius: 30px;
+  width: 80vw;
+  height: 80vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#box4{
+  position: relative;
+  background-image: url(../img/tundra.png);
+  background-size: cover;
+  border-radius: 30px;
+  width: 80vw;
+  height: 80vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
 .animal{
   position: absolute;
   top: 0px;
@@ -26,9 +67,9 @@ body{
 
 input{
   position: absolute;
-  top: 33vh;
+  top: 30vh;
   left: 40vh;
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .show{
