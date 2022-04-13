@@ -4,11 +4,12 @@ document.addEventListener("mouseover", function( event ) {
 }, false);
 
 
-
+//input click toggles class
 $("input").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
 
+//button toggles class
 $("#jag-close").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
