@@ -5,6 +5,16 @@ body{
 }
 
 
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+    background-color: black;
+    border-color: #080808;
+}
+
+.navbar-inverse{
+    background-color: #3675b4;
+
+}
+
 #box1{
   position: relative;
   background-image: url(../img/tropical.png);
