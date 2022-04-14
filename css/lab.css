@@ -79,9 +79,6 @@ body {
   }
 }
 
-
-
-
 #box1{
   position: relative;
   z-index: 0;
@@ -238,6 +235,38 @@ body {
   top: 47vh;
   left: 62vh;
   max-width: 200px;
+  z-index: -1;
+}
+
+#bwhale-pic{
+  position: absolute;
+  top: 17vh;
+  left: 42vh;
+  max-width: 400px;
+  z-index: -1;
+}
+
+#vaq-pic{
+  position: absolute;
+  top: 57vh;
+  left: 82vh;
+  max-width: 300px;
+  z-index: -1;
+}
+
+#man-pic{
+  position: absolute;
+  top: 43vh;
+  left: 22vh;
+  max-width: 150px;
+  z-index: -1;
+}
+
+#shark-pic{
+  position: absolute;
+  top: 5vh;
+  left: 120vh;
+  max-width: 150px;
   z-index: -1;
 }
 

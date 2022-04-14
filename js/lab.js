@@ -3,7 +3,6 @@ document.addEventListener("mouseover", function( event ) {
     console.log(event.screenX, event.screenY);
 }, false);
 
-
 //jag input click toggles class
 $("#jag-pic").click(function(){
   $("#jaguar .info").toggleClass("hidden");
@@ -13,7 +12,6 @@ $("#jag-pic").click(function(){
 $("#jag-close").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
-
 
 //ott input click toggles class
 $("#ott-pic").click(function(){
@@ -125,12 +123,45 @@ $("#car-close").click(function(){
   $("#caribou .info").toggleClass("hidden");
 })
 
+//blue whale input click toggles class
+$("#bwhale-pic").click(function(){
+  $("#bluewhale .info").toggleClass("hidden");
+})
 
+//blue whale close button toggles class
+$("#bwhale-close").click(function(){
+  $("#bluewhale .info").toggleClass("hidden");
+})
 
+//vaquita input click toggles class
+$("#vaq-pic").click(function(){
+  $("#vaquita .info").toggleClass("hidden");
+})
 
+//vaquita close button toggles class
+$("#vaq-close").click(function(){
+  $("#vaquita .info").toggleClass("hidden");
+})
 
+//manatee input click toggles class
+$("#man-pic").click(function(){
+  $("#mantatee .info").toggleClass("hidden");
+})
 
+//manatee close button toggles class
+$("#man-close").click(function(){
+  $("#mantatee .info").toggleClass("hidden");
+})
 
+//whale shark input click toggles class
+$("#shark-pic").click(function(){
+  $("#whaleshark .info").toggleClass("hidden");
+})
+
+//whale shark close button toggles class
+$("#shark-close").click(function(){
+  $("#whaleshark .info").toggleClass("hidden");
+})
 
 //navbar animation
 var navBar = $('.navbar');

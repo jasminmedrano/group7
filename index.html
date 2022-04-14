@@ -11,10 +11,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        	</button>
+      </div>
         <li class="active"><a class="Endangered">Endangered</a></li>
         <li><a href="#box1">Tropical</a></li>
         <li><a href="#box2">Desert</a></li>
@@ -117,7 +123,32 @@
       </div>
     </div>
     <div id="box4">
-      <div id="" class="">
+      <div id="bluewhale" class="animal">
+        <input id=bwhale-pic type="image" src="img/bluewhale.png">
+        <div class="info hidden">
+          <p id="bwhale-info"> Conor </p>
+          <button id="bwhale-close"> Close </button>
+        </div>
+      </div>
+      <div id="vaquita" class="animal">
+        <input id=vaq-pic type="image" src="img/vaquita.png">
+        <div class="info hidden">
+          <p id="vaq-info"> stefano </p>
+          <button id="vaq-close"> Close </button>
+        </div>
+      </div>
+      <div id="mantatee" class="animal">
+        <input id=man-pic type="image" src="img/mantatee.png">
+        <div class="info hidden">
+          <p id="man-info"> Melanie </p>
+          <button id="man-close"> Close </button>
+        </div>
+        <div id="whaleshark" class="animal">
+          <input id=shark-pic type="image" src="img/whaleshark.png">
+          <div class="info hidden">
+            <p id="shark-info"> Jesus Christ </p>
+            <button id="shark-close"> Close </button>
+          </div>
       </div>
     </div>
 
