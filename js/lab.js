@@ -14,7 +14,7 @@ $("#jag-close").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
 
-<<<<<<< HEAD
+
 //ott input click toggles class
 $("#ott-pic").click(function(){
   $("#gott .info").toggleClass("hidden");
@@ -84,7 +84,54 @@ $("#sheep-pic").click(function(){
 $("#sheep-close").click(function(){
   $("#sheep .info").toggleClass("hidden");
 })
-=======
+
+//pbear input click toggles class
+$("#pbear-pic").click(function(){
+  $("#p-bear .info").toggleClass("hidden");
+})
+
+//pbear close button toggles class
+$("#pbear-close").click(function(){
+  $("#p-bear .info").toggleClass("hidden");
+})
+
+//narwal input click toggles class
+$("#nar-pic").click(function(){
+  $("#narwal .info").toggleClass("hidden");
+})
+
+//narwal close button toggles class
+$("#nar-close").click(function(){
+  $("#narwal .info").toggleClass("hidden");
+})
+
+//bison input click toggles class
+$("#bis-pic").click(function(){
+  $("#bison .info").toggleClass("hidden");
+})
+
+//bison close button toggles class
+$("#bis-close").click(function(){
+  $("#bison .info").toggleClass("hidden");
+})
+
+//caribou input click toggles class
+$("#car-pic").click(function(){
+  $("#caribou .info").toggleClass("hidden");
+})
+
+//caribou close button toggles class
+$("#car-close").click(function(){
+  $("#caribou .info").toggleClass("hidden");
+})
+
+
+
+
+
+
+
+
 //navbar animation
 var navBar = $('.navbar');
 navBar.append('<li class="marker"></li>');
@@ -108,4 +155,3 @@ navBar.on("click" , "a" , function(){
     },200);
 
 });
->>>>>>> 441cda04619d3c8a2cbe29852a21d916a7217552
