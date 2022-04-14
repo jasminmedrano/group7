@@ -7,55 +7,152 @@
   	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   	<script src="js/lab.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="50">
-
-  <ul class="navbar">
-    <li class="active"><a class="Endangered">Endangered</a></li>
-    <li><a class="Tropical">Tropical</a></li>
-    <li><a class="Desert">Desert</a></li>
-    <li><a class="Tundra">Tundra</a></li>
-    <li><a class="Marine">Marine</a></li>
-  </ul>
-</div>
-
-
-  <div id="box1">
-    <div id="jaguar" class="animal">
-      <input type="image" src="img/jaguir.png">
-      <div class="info hidden">
-        <p id="jag-info"> “I am a jaguar in the large cat species. I can be up to 6 ft and one inch.
-           I am the third largest cat in the world. I am pale yellow to tan colored fur with spots.
-           I have a very powerful bite; I can break through a turtle's shell. But my habitat is in DANGER!
-           Due to fragmentation meaning big parts of my habitat are destroyed that it is hard to regrow over time!
-           long with human lpoaching who wants my fur! There's only 15,000 jaguars left in the world!
-           If I go extinct the food chain will be disrupted and the rodent population will rise!” </p>
-        <button id=jag-close> Close </button>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        	</button>
+      </div>
+        <li class="active"><a class="Endangered">Endangered</a></li>
+        <li><a href="#box1">Tropical</a></li>
+        <li><a href="#box2">Desert</a></li>
+        <li><a href="#box3">Tundra</a></li>
+        <li><a href="#box4">Marine</a></li>
+  </nav>
+    <div id="box1">
+      <div id="jaguar" class="animal">
+        <input id=jag-pic type="image" src="img/jaguir.png">
+        <div class="info hidden">
+          <p id="jag-info"> “I am a jaguar in the large cat species. I can be up to 6 ft and one inch.
+             I am the third largest cat in the world. I am pale yellow to tan colored fur with spots.
+             I have a very powerful bite; I can break through a turtle's shell. But my habitat is in DANGER!
+             Due to fragmentation meaning big parts of my habitat are destroyed that it is hard to regrow over time!
+             long with human poaching who wants my fur! There's only 15,000 jaguars left in the world!
+             If I go extinct the food chain will be disrupted and the rodent population will rise!” </p>
+          <button id=jag-close> Close </button>
+        </div>
+      </div>
+      <div id="gott" class="animal">
+        <input id=ott-pic type="image" src="img/giantotter.png">
+        <div class="info hidden">
+          <p id="ott-info"> dove cameron </p>
+          <button id="ott-close"> Close </button>
+        </div>
+      </div>
+      <div id="tapir" class="animal">
+        <input id="tap-pic" type="image" src="img/tapir.png">
+        <div class="info hidden">
+          <p id="tap-info"> alexis texas </p>
+          <button id="tap-close"> Close </button>
+        </div>
+      </div>
+      <div id="bird" class="animal">
+        <input id="b-pic" type="image" src="img/bird.png">
+        <div class="info hidden">
+          <p id="b-info"> Sprite vs pepsi </p>
+          <button id="b-close"> Close </button>
+        </div>
       </div>
     </div>
-  </div>
-
-
-
-
-
-  <div id="box2">
-    <div id="" class="">
+    <div id="box2">
+      <div id="cheetah" class="animal">
+        <input id=chet-pic type="image" src="img/cheetah.png">
+        <div class="info hidden">
+          <p id="chet-info"> Your Mom  </p>
+          <button id="chet-close"> Close </button>
+        </div>
+      </div>
+      <div id="ostrich" class="animal">
+        <input id=ost-pic type="image" src="img/ostrich.png">
+        <div class="info hidden">
+          <p id="ost-info"> Your Dad  </p>
+          <button id="ost-close"> Close </button>
+        </div>
+      </div>
+      <div id="turtle" class="animal">
+        <input id=turt-pic type="image" src="img/turtle.png">
+        <div class="info hidden">
+          <p id="turt-info"> Your Grandma  </p>
+          <button id="turt-close"> Close </button>
+        </div>
+      </div>
+      <div id="sheep" class="animal">
+        <input id=sheep-pic type="image" src="img/sheep.png">
+        <div class="info hidden">
+          <p id="sheep-info"> Your Grandpa  </p>
+          <button id="sheep-close"> Close </button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="box3">
-    <div id="" class="">
+    <div id="box3">
+      <div id="p-bear" class="animal">
+        <input id=pbear-pic type="image" src="img/polarbear.png">
+        <div class="info hidden">
+          <p id="pbear-info"> Jonathan C  </p>
+          <button id="pbear-close"> Close </button>
+        </div>
+      </div>
+      <div id="narwal" class="animal">
+        <input id=nar-pic type="image" src="img/narwal.png">
+        <div class="info hidden">
+          <p id="nar-info"> Gabby L  </p>
+          <button id="nar-close"> Close </button>
+        </div>
+      </div>
+      <div id="bison" class="animal">
+        <input id=bis-pic type="image" src="img/bison.png">
+        <div class="info hidden">
+          <p id="bis-info"> Jasmin </p>
+          <button id="bis-close"> Close </button>
+        </div>
+      </div>
+      <div id="caribou" class="animal">
+        <input id=car-pic type="image" src="img/caribou.png">
+        <div class="info hidden">
+          <p id="car-info"> Ariana </p>
+          <button id="car-close"> Close </button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="box4">
-    <div id="" class="">
+    <div id="box4">
+      <div id="bluewhale" class="animal">
+        <input id=bwhale-pic type="image" src="img/bluewhale.png">
+        <div class="info hidden">
+          <p id="bwhale-info"> Conor </p>
+          <button id="bwhale-close"> Close </button>
+        </div>
+      </div>
+      <div id="vaquita" class="animal">
+        <input id=vaq-pic type="image" src="img/vaquita.png">
+        <div class="info hidden">
+          <p id="vaq-info"> stefano </p>
+          <button id="vaq-close"> Close </button>
+        </div>
+      </div>
+      <div id="mantatee" class="animal">
+        <input id=man-pic type="image" src="img/mantatee.png">
+        <div class="info hidden">
+          <p id="man-info"> Melanie </p>
+          <button id="man-close"> Close </button>
+        </div>
+        <div id="whaleshark" class="animal">
+          <input id=shark-pic type="image" src="img/whaleshark.png">
+          <div class="info hidden">
+            <p id="shark-info"> Jesus Christ </p>
+            <button id="shark-close"> Close </button>
+          </div>
+      </div>
     </div>
-  </div>
 
-<img src="" alt="">
+
 
 </body>
 </html>
