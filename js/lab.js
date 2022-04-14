@@ -14,6 +14,7 @@ $("#jag-close").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
 
+<<<<<<< HEAD
 //ott input click toggles class
 $("#ott-pic").click(function(){
   $("#gott .info").toggleClass("hidden");
@@ -83,3 +84,28 @@ $("#sheep-pic").click(function(){
 $("#sheep-close").click(function(){
   $("#sheep .info").toggleClass("hidden");
 })
+=======
+//navbar animation
+var navBar = $('.navbar');
+navBar.append('<li class="marker"></li>');
+
+navBar.on("click" , "a" , function(){
+
+    var navTap = $(this).closest('.navbar');
+    var mrkWidth = $(this).parent('li').width();
+    var marker = navTap.find('.marker');
+    var nx = $(".navbar").offset();
+    var lx = $(this).parent('li').offset();
+    var left = lx.left - nx.left;
+
+   navBar.find('li').removeClass('active');
+
+   $(this).parent().addClass('active');
+
+    marker.removeClass("anim").css({ "width" : mrkWidth , "left" : left });
+    setTimeout(function(){
+      marker.addClass("anim")
+    },200);
+
+});
+>>>>>>> 441cda04619d3c8a2cbe29852a21d916a7217552
