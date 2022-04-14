@@ -14,7 +14,9 @@ body {
   display: inline-block;
   padding: 0 15px;
   position: sticky;
+  width: 100%;
 }
+
 .navbar li {
   display: table-cell;
   padding: 15px;
