@@ -1,8 +1,25 @@
 
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+
 @import url("https://fonts.google.com/specimen/Roboto+Condensed Mediumo:400,500,700,300");
 *, *:after, *:before {
   box-sizing: border-box;
 }
+
+#gap-section1{
+  background-color: #81b977;
+}
+
+p{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
 .circle {
   background-color: #aec09a;
   border-radius: 50%;
@@ -366,12 +383,6 @@ bottom: 0;
 left: 0;
 }
 
-
-
-body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  text-align: center;
-}
 
 .navbar {
   background: black;
