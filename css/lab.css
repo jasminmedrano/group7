@@ -271,7 +271,7 @@ color: #4a95a2;
 }
 
 .circle13 {
-background-color: #bb9a62;
+background-color: #6cb4cb;
 border-radius: 50%;
 position: relative;
 border: 3px solid #164665;
@@ -290,6 +290,29 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 text-align: center;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 color: #5d5d66;
+}
+
+
+.circle14{
+background-color: #6cb4cb;
+border-radius: 50%;
+position: relative;
+border: 3px solid #164665;
+ height: 290px;
+width: 700px;
+}
+
+.column27 {
+color:  #013d41;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.column28 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #013d41;
 }
 
 
