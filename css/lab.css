@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 .circle {
-  background-color: #7ba7e8;
+  background-color: #aec09a;
   border-radius: 50%;
   position: relative;
-  border: 2px solid #ffff00;
+  border: 2px solid #366818;
   height: 250px;
   width: 800px;
 }
@@ -25,6 +25,27 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 text-align: center;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 color: #ffff00;
+}
+
+.circle2 {
+  background-color: #aec09a;
+  border-radius: 50%;
+position: relative;
+border: 2px solid #366818;
+        height: 350px;
+        width: 800px;
+}
+.column3 {
+color: #9c735d;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+.column4 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #9c735d;
 }
 
 #bottom {
