@@ -10,6 +10,16 @@ body {
   box-sizing: border-box;
 }
 
+.email{
+  background-color: #232323;
+}
+
+ label{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+}
+
+
 #gap-section1{
   background-color: #81b977;
 }
