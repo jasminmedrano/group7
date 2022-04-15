@@ -29,15 +29,16 @@ color: #ffff00;
 
 
 .circle2 {
-  background-color: #aec09a;
-  border-radius: 50%;
+background-color: #aec09a;
+border-radius: 50%;
 position: relative;
 border: 2px solid #366818;
-        height: 300px;
-        width: 800px;
+height: 300px;
+width: 800px;
 }
+
 .column3 {
-color: #3d66a4;
+color: #4d505e;
 text-align: center;
 font-size: 22px;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -46,7 +47,7 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .column4 {
 text-align: center;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-color:  #3d66a4;
+color:  #4d505e;
 }
 
 .circle3 {
@@ -70,6 +71,39 @@ text-align: center;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 color: #9c735d;
 }
+
+.circle4 {
+background-color: #aec09a;
+border-radius: 50%;
+position: relative;
+border: 2px solid #366818;
+height: 300px;
+width: 800px;
+}
+
+.column7 {
+color: #23446c;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.column8 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color:  #23446c;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #bottom {
 position: absolute;
