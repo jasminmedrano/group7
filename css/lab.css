@@ -226,7 +226,27 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 color: #d19c71;
 }
 
+.circle11 {
+background-color: #dbe9f7;
+border-radius: 50%;
+position: relative;
+border: 3px solid #527081;
+ height: 290px;
+width: 700px;
+}
 
+.column21 {
+color:  #9e9690;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.column22 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #9e9690;
+}
 
 
 #bottom {
