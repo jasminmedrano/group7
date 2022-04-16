@@ -548,6 +548,8 @@ left: 0;
 }
 
 #box3{
+  overflow-x: hidden;
+  overflow-x: scroll;
   position: relative;
     z-index: 0;
     background-image: url(../img/tundra.png);
@@ -562,17 +564,20 @@ left: 0;
 }
 
 #box4{
+  overflow-x: hidden;
+  overflow-x: scroll;
   position: relative;
-   z-index: 0;
-   background-image: url(../img/marine.png);
-   background-size: cover;
-   border-radius: 30px;
-   width: 70vw;
-   height: 70vh;
-   text-align: center;
-   margin: auto;
-   padding: 10px;
-   margin-top: 30px;
+z-index: 0;
+background-image: url(../img/marine.png);
+background-size: cover;
+border-radius: 30px;
+width: 70vw;
+height: 70vh;
+text-align: center;
+margin: auto;
+padding: 10px;
+margin-top: 30px;
+
 }
 
 .animal{
