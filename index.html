@@ -9,34 +9,58 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   </head>
 
+  <!-- The Scrollable area -->
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                  <h5 class="modal-title">Welcome to our site!</h5>
+              </div>
+              <div class="modal-body">
+                  <p2>This site includes sounds! If you would like to hear, make sure you turn on your sound to an appropiate level. If you choose not too, all is well, just keep the sound off; the page will work the same</p2>
+                  <br>
+                  <br>
+                  <p>Thank you and enjoy!<p>
+              </div>
+
+          </div>
+      </div>
+    </div>
+  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         	</button>
+          <a class="navbar-brand">Endangered Species & Ecosystems</a>
       </div>
-        <li class="active"><a href="https://jasminmedrano.github.io/group7/">Endangered Species & Ecosystems</a></li>
-        <li><a href="#box1">Tropical</a></li>
-        <li><a href="#box2">Desert</a></li>
-        <li><a href="#box3">Tundra</a></li>
-        <li><a href="#box4">Marine</a></li>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#box1">Tropical</a></li>
+            <li><a href="#box2">Desert</a></li>
+            <li><a href="#box3">Tundra</a></li>
+            <li><a href="#box4">Marine</a></li>
+          </ul>
+        </div>
   </nav>
-
   <div id="description">
 		<h1 class="title">Our Site's Mission</h1>
 		<p>Endangered Species & Ecosystems is an interactable site where you can explore
       different ecosystems and learn about a few endangered species that live within those biomes.
       These species can range from conversation status of vulnerable to nearly extinct.
-
     </p>
 	</div>
+
+
+
 
     <div id="box1">
       <div id="jaguar" class="animal">
@@ -44,21 +68,24 @@
         <div class="info hidden">
 
           <p id="jag-info">    <div class="circle">
-            <div class="column1">
+            <div class="column">
         <h2>Jaguar</h2>
       </div>
       <div class="column2">
-       “I am a Jaguar in the large cat species. I can be up to 6 ft and one inch.
-<br>
-             I am the third largest cat in the world. I am pale yellow to tan colored fur with spots.
-<br>
-             I have a very powerful bite; I can break through a turtle's shell. But my habitat is in DANGER!
-<br>
-             Due to fragmentation meaning big parts of my habitat are destroyed that it is hard to regrow over time!
-<br>
-             long with human poaching who wants my fur! There's only 15,000 jaguars left in the world!
-<br>
-             If I go extinct the food chain will be disrupted and the rodent population will rise!”
+        <audio id="jagsound">
+          <source src="mp3/jagsound.mp3">
+        </audio>
+               “I am a Jaguar in the large cat species. I can be up to 6 ft and one inch.
+        <br>
+                     I am the third largest cat in the world. I am pale yellow to tan colored fur with spots.
+        <br>
+                     I have a very powerful bite; I can break through a turtle's shell. But my habitat is in DANGER!
+        <br>
+                     Due to fragmentation meaning big parts of my habitat are destroyed that it is hard to regrow over time!
+        <br>
+                     long with human poaching who wants my fur! There's only 15,000 jaguars left in the world!
+        <br>
+                     If I go extinct the food chain will be disrupted and the rodent population will rise!”
       </div>
     </div>
           <button id=jag-close> Close </button>
@@ -69,14 +96,17 @@
 
       <div id="gott" class="animal">
         <input id=ott-pic type="image" src="img/giantotter.png">
+        <audio id="ottsound">
+          <source src="mp3/ottsound.mp3">
+        </audio>
         <div class="info hidden">
 
           <p id="ott-info">
-               <div class="circle2">
-            <div class="column3">
+               <div class="circle">
+            <div class="column">
        <h2>Giant Otter</h2>
      </div>
-     <div class="column4">
+     <div class="column2">
        I am a Giant Otter. I live in the Amazon River and Pantanal.
 <br>
        I am the largest member of the weasel family…
@@ -99,12 +129,15 @@
         <input id="tap-pic" type="image" src="img/tapir.png">
         <div class="info hidden">
           <p id="tap-info">
-            <div class="circle3">
+            <div class="circle">
 
-    <div class="column5">
+    <div class="column">
       <h2>South American Tapir</h2>
     </div>
-    <div class="column6">
+    <audio id="tapirsound">
+      <source src="mp3/tapir.mp3">
+    </audio>
+    <div class="column2">
 
         I am a South American Tapir.
 <br>
@@ -120,7 +153,9 @@
 <br>
 Without my species the ecosystem would not provide the same rich variety of animals and plants.
 <br>
-We are known as the umbrella species because we have many habitats that include different species throughout.
+We are known as the umbrella species
+<br>
+because we have many habitats that include different species throughout.
 </div>
 </div>
   <button id="tap-close"> Close </button>
@@ -131,13 +166,16 @@ We are known as the umbrella species because we have many habitats that include 
       <div id="bird" class="animal">
         <input id="b-pic" type="image" src="img/bird.png">
         <div class="info hidden">
+          <audio id="macawsound">
+            <source src="mp3/bluemacaw.mp3">
+          </audio>
           <p id="b-info">
-            <div class="circle4">
+            <div class="circle">
 
-                <div class="column7">
+                <div class="column">
                   <h2>Hyacinth Macaws</h2>
                 </div>
-                <div class="column8">
+                <div class="column2">
 
                   I am Hyacinth Macaw. I am native to Central and Eastern South America.
       <br>
@@ -167,18 +205,21 @@ We are known as the umbrella species because we have many habitats that include 
     <div id="box2">
       <div id="cheetah" class="animal">
         <input id=chet-pic type="image" src="img/cheetah.png">
+        <audio id="cheetsound">
+          <source src="mp3/cheetsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="chet-info">
-            <div class="circle5">
-            <div class="column9">
+            <div class="circle">
+            <div class="column">
             <h2>Saharan Cheetah</h2>
              </div>
-             <div class="column10">
+             <div class="column2">
             I am a Saharan Cheetah! I am mostly nocturnal.
             <br>
                  I am most active between sunset and early mornings.
             <br>
-                         I have a short coat and almost white in color with spots. I live in Western and Central Sahara.
+                I have a short coat and almost white in color with spots. I live in Western and Central Sahara.
             <br>
                      I can travel large distances but I try not to.
             <br>
@@ -194,18 +235,18 @@ We are known as the umbrella species because we have many habitats that include 
           <button id="chet-close"> Close </button>
         </div>
       </div>
-
-
-
       <div id="ostrich" class="animal">
         <input id=ost-pic type="image" src="img/ostrich.png">
+        <audio id="ostsound">
+          <source src="mp3/ostsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="ost-info">
-            <div class="circle6">
-            <div class="column11">
+            <div class="circle">
+            <div class="column">
             <h2>North African Ostrich</h2>
              </div>
-             <div class="column12">
+             <div class="column2">
             I am a North African Ostrich! I am the largest living bird!
             <br>
                  I live from Western to Northeastern Africa.
@@ -222,18 +263,18 @@ We are known as the umbrella species because we have many habitats that include 
           <button id="ost-close"> Close </button>
         </div>
       </div>
-
-
-
       <div id="turtle" class="animal">
         <input id=turt-pic type="image" src="img/turtle.png">
+        <audio id="tortsound">
+          <source src="mp3/tortsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="turt-info">
-            <div class="circle7">
-  <div class="column13">
+            <div class="circle">
+  <div class="column">
   <h2>Egyptian Tortoise</h2>
    </div>
-   <div class="column14">
+   <div class="column2">
   I am a Egyptian Tortoise! I am native to Egypt, Libya, and Isreal!
   <br>
   I am the smallest tortoise in the Northern Hemisphere.
@@ -255,13 +296,16 @@ We are known as the umbrella species because we have many habitats that include 
 
       <div id="sheep" class="animal">
         <input id=sheep-pic type="image" src="img/sheep.png">
+        <audio id="bhornsound">
+          <source src="mp3/bhornsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="sheep-info">
-            <div class="circle8">
-<div class="column15">
+            <div class="circle">
+<div class="column">
 <h2>Peninsular Bighorn Sheep</h2>
  </div>
- <div class="column16">
+ <div class="column2">
 I am a Peninsular Bighorn Sheep! I can go without water for extended periods of time.
 <br>
 I am the state mammal of Nevada.
@@ -290,13 +334,16 @@ Due to overhunting and habitat loss it is hard to find water resources nowadays.
     <div id="box3">
       <div id="p-bear" class="animal">
         <input id=pbear-pic type="image" src="img/polarbear.png">
+        <audio id="pbearsound">
+          <source src="mp3/pbearsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="pbear-info">
-            <div class="circle9">
-<div class="column17">
+            <div class="circle">
+<div class="column">
 <h2>Polar Bears</h2>
  </div>
- <div class="column18">
+ <div class="column2">
 I am a Polar Bear! I can run up to 24mph!
 <br>
 My species can weight up to 2,866 lbs for males and for females they can weigh up to 1,543 lbs.
@@ -317,18 +364,18 @@ Currently, there is only 25,000 polar bears left in the world.
 <button id="pbear-close"> Close </button>
         </div>
       </div>
-
-
-
       <div id="narwal" class="animal">
         <input id=nar-pic type="image" src="img/narwal.png">
+        <audio id="narsound">
+          <source src="mp3/narsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="nar-info">
-            <div class="circle12">
-            <div class="column23">
+            <div class="circle">
+            <div class="column">
             <h2>Narwal</h2>
              </div>
-             <div class="column24">
+             <div class="column2">
             I am a Narwal.
             <br>
             My diet consists of green land halibut, arctic/polar cod, squid, and shrimp.
@@ -341,8 +388,6 @@ Currently, there is only 25,000 polar bears left in the world.
             <br>
             Juveniles are blue/black and adults are mottled gray.
             <br>
-            When we are older we turn white.
-            <br>
             Due to oil and gas development we have been losing our habitat.
             <br>
             Making my species easier targets for polar bears and killer whales!
@@ -354,19 +399,18 @@ Currently, there is only 25,000 polar bears left in the world.
           <button id="nar-close"> Close </button>
         </div>
       </div>
-
-
-
-
       <div id="bison" class="animal">
         <input id=bis-pic type="image" src="img/bison.png">
+        <audio id="bissound">
+          <source src="mp3/bissound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="bis-info">
-            <div class="circle10">
-            <div class="column19">
+            <div class="circle">
+            <div class="column">
             <h2>Wood Bisons</h2>
              </div>
-             <div class="column20">
+             <div class="column2">
             I am a Wood Bison! I live anywhere that has a forest or mountains.
             <br>
             I can weigh up to 2,000 pounds!
@@ -389,18 +433,18 @@ Currently, there is only 25,000 polar bears left in the world.
           <button id="bis-close"> Close </button>
         </div>
       </div>
-
-
-
       <div id="caribou" class="animal">
         <input id=car-pic type="image" src="img/caribou.png">
+        <audio id="carsound">
+          <source src="mp3/carsound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="car-info">
-            <div class="circle11">
-            <div class="column21">
+            <div class="circle">
+            <div class="column">
             <h2>Mountain Caribou</h2>
              </div>
-             <div class="column22">
+             <div class="column2">
             I am a Mountain Caribou.
             <br>
             I live in Western Alberta and British Columbia.
@@ -431,13 +475,16 @@ Currently, there is only 25,000 polar bears left in the world.
     <div id="box4">
       <div id="bluewhale" class="animal">
         <input id=bwhale-pic type="image" src="img/bluewhale.png">
+        <audio id="bwhalesound">
+          <source src="mp3/bwhalesound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="bwhale-info">
-            <div class="circle15">
-            <div class="column29">
+            <div class="circle">
+            <div class="column">
             <h2>Blue Whale</h2>
              </div>
-             <div class="column30">
+             <div class="column2">
             I am a Blue Whale.
             <br>
             I am the largest and loudest animal on the planet!
@@ -456,18 +503,15 @@ Currently, there is only 25,000 polar bears left in the world.
           <button id="bwhale-close"> Close </button>
         </div>
       </div>
-
-
-
       <div id="vaquita" class="animal">
         <input id=vaq-pic type="image" src="img/vaquita.png">
         <div class="info hidden">
           <p id="vaq-info">
-            <div class="circle16">
-            <div class="column31">
+            <div class="circle">
+            <div class="column">
             <h2>Vaquita</h2>
              </div>
-             <div class="column32">
+             <div class="column2">
             I am a Vaquita.
             <br>
             I am porpoise with a dark coloration around the eyes and mouth.
@@ -486,17 +530,18 @@ Currently, there is only 25,000 polar bears left in the world.
           <button id="vaq-close"> Close </button>
         </div>
       </div>
-
-
       <div id="mantatee" class="animal">
         <input id=man-pic type="image" src="img/mantatee.png">
+        <audio id="mansound">
+          <source src="mp3/mansound.mp3">
+        </audio>
         <div class="info hidden">
           <p id="man-info">
-            <div class="circle14">
-<div class="column27">
+            <div class="circle">
+<div class="column">
 <h2>Florida Manatee</h2>
  </div>
- <div class="column28">
+ <div class="column2">
 I am a Florida Manatee.
 <br>
 I can weigh up to 1,000 pounds and grow up to 10 feet.
@@ -516,17 +561,18 @@ Which has made my species become very stressed and starve to death.
         </div>
       </div>
 
-
-
         <div id="whaleshark" class="animal">
           <input id=shark-pic type="image" src="img/whaleshark.png">
+          <audio id="wsharksound">
+            <source src="mp3/wsharksound.mp3">
+          </audio>
           <div class="info hidden">
             <p id="shark-info">
-              <div class="circle13">
-              <div class="column25">
+              <div class="circle">
+              <div class="column">
               <h2>Whale Sharks</h2>
                </div>
-               <div class="column26">
+               <div class="column2">
               I am a Whale Shark.
               <br>
               I am the largest shark and one of the largest fishes alive!
@@ -570,7 +616,7 @@ Which has made my species become very stressed and starve to death.
           <div>
              <label>Email address</label>
              <div>
-                <input style="margin-top: 5px;background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
+                <input style="margin-top: 5px;  background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
              </div>
           </div>
           <br>

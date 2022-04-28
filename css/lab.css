@@ -68,6 +68,30 @@ p{
     color: black;
 }
 
+.circle  {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+  height: 275px;
+  width: 800px;
+}
+
+
+.column  {
+color: green;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.column2 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #5c5c5c;
+}
+
+/*
 .circle {
   background-color: #aec09a;
   border-radius: 50%;
@@ -438,7 +462,7 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 color: black;
 font-size: 20px;
 }
-
+*/
 
 #bottom {
 position: absolute;
@@ -470,7 +494,7 @@ left: 0;
   transition: ease-in 0.3s;
 }
 .navbar li.active a {
-  color: red;
+  color: green;
   text-shadow: 1px 1px 2px #14171A;
 }
 .navbar li.marker {
@@ -478,7 +502,7 @@ left: 0;
   position: absolute;
   height: 2px;
   padding: 0;
-  background: red;
+  background: green;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   top: calc(100% - 2px);
@@ -522,9 +546,10 @@ left: 0;
   overflow-x: scroll;
   position: relative;
   z-index: 0;
-  background-image: url(../img/tropical4.png);
+  background-image: url(../img/tropical.png);
   background-size: cover;
   border-radius: 30px;
+  border: green 3px solid;
   width: 70vw;
   height: 70vh;
   text-align: center;
@@ -540,6 +565,7 @@ left: 0;
   z-index: 0;
   background-image: url(../img/desert.png);
   background-size: cover;
+  border: green 3px solid;
   border-radius: 30px;
   width: 70vw;
   height: 70vh;
@@ -553,33 +579,35 @@ left: 0;
   overflow-x: hidden;
   overflow-x: scroll;
   position: relative;
-    z-index: 0;
-    background-image: url(../img/tundra.png);
-    background-size: cover;
-    border-radius: 30px;
-    width: 70vw;
-    height: 70vh;
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    margin-top: 30px;
+  z-index: 0;
+  background-image: url(../img/tundra.png);
+  background-size: cover;
+  border: green 3px solid;
+  border-radius: 30px;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
 }
 
 #box4{
   overflow-x: hidden;
   overflow-x: scroll;
   position: relative;
-z-index: 0;
-background-image: url(../img/marine.png);
-background-size: cover;
-border-radius: 30px;
-width: 70vw;
-height: 70vh;
-text-align: center;
-margin: auto;
-padding: 10px;
-margin-top: 30px;
-
+  z-index: 0;
+  background-image: url(../img/marine.png);
+  background-size: cover;
+  border: green 3px solid;
+  border-radius: 30px;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+`
 }
 
 .animal{
@@ -591,20 +619,18 @@ margin-top: 30px;
 
 }
 
-
-
 #jag-pic{
   position: absolute;
-  top: 35vh;
-  left: 5vw;
-  max-height: 300px;
+  top: 40vh;
+  left: 2vw;
+  max-height: 250px;
 }
 
 #ott-pic{
   margin-right: 20px;
   position: absolute;
-  top: 55vh;
-  left: 110vh;
+  top: 60vh;
+  left: 80vh;
   max-width: 200px;
   z-index: -1;
 }
@@ -612,18 +638,18 @@ margin-top: 30px;
 #tap-pic{
   margin-right: 20px;
   position: absolute;
-  top: 55vh;
-  left: 65vh;
-  max-width: 200px;
+  top: 32vh;
+  left: 55vh;
+  max-width: 100px;
   z-index: -1;
 }
 
 #b-pic{
   position: absolute;
-top: 5vh;
-left: 45vh;
-max-width: 300px;
-z-index: -1;
+  top: 5vh;
+  left: 45vh;
+  max-width: 250px;
+  z-index: -1;
 }
 
 #chet-pic{
@@ -736,4 +762,17 @@ z-index: -1;
   height: 65vh;
   text-align: center;
 
+}
+
+.modal-body{
+  font-size: 17px;
+}
+
+.modal-title{
+  font-size: 30px;
+}
+
+.modal-header{
+  background-color: green;
+  color: white;
 }

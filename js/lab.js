@@ -6,6 +6,7 @@ document.addEventListener("mouseover", function( event ) {
 //jag input click toggles class
 $("#jag-pic").click(function(){
   $("#jaguar .info").toggleClass("hidden");
+  $("#jagsound").trigger("play");
 })
 
 //jag close button toggles class
@@ -13,9 +14,11 @@ $("#jag-close").click(function(){
   $("#jaguar .info").toggleClass("hidden");
 })
 
+
 //ott input click toggles class
 $("#ott-pic").click(function(){
   $("#gott .info").toggleClass("hidden");
+  $("#ottsound").trigger("play");
 })
 
 //ott close button toggles class
@@ -26,6 +29,7 @@ $("#ott-close").click(function(){
 //tapir input click toggles class
 $("#tap-pic").click(function(){
   $("#tapir .info").toggleClass("hidden");
+  $("#tapirsound").trigger("play");
 })
 
 //tapir close button toggles class
@@ -36,6 +40,7 @@ $("#tap-close").click(function(){
 //bird input click toggles class
 $("#b-pic").click(function(){
   $("#bird .info").toggleClass("hidden");
+  $("#macawsound").trigger("play");
 })
 
 //bird close button toggles class
@@ -46,6 +51,7 @@ $("#b-close").click(function(){
 //chet input click toggles class
 $("#chet-pic").click(function(){
   $("#cheetah .info").toggleClass("hidden");
+  $("#cheetsound").trigger("play");
 })
 
 //chet close button toggles class
@@ -56,6 +62,7 @@ $("#chet-close").click(function(){
 //ost input click toggles class
 $("#ost-pic").click(function(){
   $("#ostrich .info").toggleClass("hidden");
+  $("#ostsound").trigger("play");
 })
 
 //ost close button toggles class
@@ -66,6 +73,7 @@ $("#ost-close").click(function(){
 //turt input click toggles class
 $("#turt-pic").click(function(){
   $("#turtle .info").toggleClass("hidden");
+  $("#tortsound").trigger("play");
 })
 
 //turt close button toggles class
@@ -76,6 +84,7 @@ $("#turt-close").click(function(){
 //sheep input click toggles class
 $("#sheep-pic").click(function(){
   $("#sheep .info").toggleClass("hidden");
+  $("#bhornsound").trigger("play");
 })
 
 //sheep close button toggles class
@@ -86,6 +95,7 @@ $("#sheep-close").click(function(){
 //pbear input click toggles class
 $("#pbear-pic").click(function(){
   $("#p-bear .info").toggleClass("hidden");
+  $("#pbearsound").trigger("play");
 })
 
 //pbear close button toggles class
@@ -96,6 +106,7 @@ $("#pbear-close").click(function(){
 //narwal input click toggles class
 $("#nar-pic").click(function(){
   $("#narwal .info").toggleClass("hidden");
+  $("#narsound").trigger("play");
 })
 
 //narwal close button toggles class
@@ -106,6 +117,7 @@ $("#nar-close").click(function(){
 //bison input click toggles class
 $("#bis-pic").click(function(){
   $("#bison .info").toggleClass("hidden");
+  $("#bissound").trigger("play");
 })
 
 //bison close button toggles class
@@ -116,6 +128,7 @@ $("#bis-close").click(function(){
 //caribou input click toggles class
 $("#car-pic").click(function(){
   $("#caribou .info").toggleClass("hidden");
+  $("#carsound").trigger("play");
 })
 
 //caribou close button toggles class
@@ -126,6 +139,7 @@ $("#car-close").click(function(){
 //blue whale input click toggles class
 $("#bwhale-pic").click(function(){
   $("#bluewhale .info").toggleClass("hidden");
+  $("#bwhalesound").trigger("play");
 })
 
 //blue whale close button toggles class
@@ -146,6 +160,7 @@ $("#vaq-close").click(function(){
 //manatee input click toggles class
 $("#man-pic").click(function(){
   $("#mantatee .info").toggleClass("hidden");
+  $("#mansound").trigger("play");
 })
 
 //manatee close button toggles class
@@ -156,6 +171,7 @@ $("#man-close").click(function(){
 //whale shark input click toggles class
 $("#shark-pic").click(function(){
   $("#whaleshark .info").toggleClass("hidden");
+  $("#wsharksound").trigger("play");
 })
 
 //whale shark close button toggles class
@@ -186,3 +202,7 @@ navBar.on("click" , "a" , function(){
     },200);
 
 });
+
+$(document).ready(function(){
+        $("#myModal").modal('show');
+    });
