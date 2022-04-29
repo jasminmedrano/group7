@@ -795,3 +795,11 @@ z-index: -1;
 .flashcard {
   cursor:pointer;
 }
+
+.bg-dark{
+  background-color: black!important;
+}
+
+.navbar-brand{
+  color: white;
+}
