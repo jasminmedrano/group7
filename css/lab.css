@@ -6,6 +6,8 @@ body {
 
 .title {
   color: green;
+  font-size: 36px;
+  text-decoration: none;
 }
 
 #description {
