@@ -1,0 +1,445 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: green;
+}
+
+#myCarousel {
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  border: green 3px solid;
+  width: 50vw;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#description {
+  width: 70vw;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+#description_tropical {
+  width: 70vw;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+}
+
+#description_desert {
+  width: 70vw;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+}
+
+#description_tundra {
+  width: 70vw;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+}
+
+#description_marine {
+  width: 70vw;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+}
+
+
+@import url("https://fonts.google.com/specimen/Roboto+Condensed Mediumo:400,500,700,300");
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.email{
+  background-color: #232323;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ label{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+}
+
+
+p{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.circle  {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+  height: 275px;
+  width: 800px;
+}
+
+
+.column  {
+color: green;
+text-align: center;
+font-size: 22px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.column2 {
+text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #5c5c5c;
+}
+
+
+#bottom {
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+
+.navbar {
+  background: black;
+  display: inline-block;
+  padding: 0 15px;
+  position: sticky;
+  width: 100%;
+}
+
+.navbar li {
+  display: table-cell;
+  padding: 15px;
+  min-width: 75px;
+  text-align: center;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.navbar li.active a {
+  color: green;
+  text-shadow: 1px 1px 2px #14171A;
+}
+.navbar li.marker {
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  padding: 0;
+  background: green;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  top: calc(100% - 2px);
+  left: 15px;
+}
+.navbar li.anim {
+  -webkit-animation: 0.4s shake ease-in;
+  animation: 0.4s shake ease-in;
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+#box1{
+  overflow-x: hidden;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/tropical.png);
+  background-size: cover;
+  border-radius: 30px;
+  border: green 3px solid;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#box2{
+  overflow-x: hidden;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/desert.png);
+  background-size: cover;
+  border: green 3px solid;
+  border-radius: 30px;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#box3{
+  overflow-x: hidden;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/tundra.png);
+  background-size: cover;
+  border: green 3px solid;
+  border-radius: 30px;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#box4{
+  overflow-x: hidden;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/marine.png);
+  background-size: cover;
+  border: green 3px solid;
+  border-radius: 30px;
+  width: 70vw;
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+`
+}
+
+.animal{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 40%
+  height: 80vh;
+
+}
+
+#jag-pic{
+  position: absolute;
+  top: 40vh;
+  left: 2vw;
+  max-height: 250px;
+}
+
+#ott-pic{
+  margin-right: 20px;
+  position: absolute;
+  top: 60vh;
+  left: 80vh;
+  max-width: 200px;
+  z-index: -1;
+}
+
+#tap-pic{
+  margin-right: 20px;
+  position: absolute;
+  top: 32vh;
+  left: 55vh;
+  max-width: 100px;
+  z-index: -1;
+}
+
+#b-pic{
+  position: absolute;
+  top: 5vh;
+  left: 45vh;
+  max-width: 250px;
+  z-index: -1;
+}
+
+#chet-pic{
+  position: absolute;
+top: 50vh;
+left: 85vh;
+max-height: 150px;
+z-index: -1;
+}
+
+#ost-pic{
+  position: absolute;
+top: 45vh;
+left: 10vh;
+max-width: 400px;
+z-index: -1;
+}
+
+#turt-pic{
+  position: absolute;
+top: 63vh;
+left: 68vh;
+max-width: 70px;
+z-index: -1;
+}
+
+#sheep-pic{
+  position: absolute;
+   top: 25vh;
+   left: 96vh;
+   max-width: 80px;
+   z-index: -1;
+}
+
+#pbear-pic{
+  position: absolute;
+    top: 40vh;
+    left: 105vh;
+    max-width: 200px;
+    z-index: -1;
+}
+
+#nar-pic{
+  position: absolute;
+ top: 40vh;
+ left: 30vh;
+ max-width: 200px;
+ z-index: -1;
+}
+
+#bis-pic{
+  position: absolute;
+  top: 45vh;
+  left: 2vh;
+  max-width: 300px;
+  z-index: -1;
+}
+
+#car-pic{
+  position: absolute;
+  top: 37vh;
+  left: 62vh;
+  max-width: 200px;
+  z-index: -1;
+}
+
+#bwhale-pic{
+  position: absolute;
+  top: 17vh;
+  left: 42vh;
+  max-width: 400px;
+  z-index: -1;
+}
+
+#vaq-pic{
+  position: absolute;
+  top: 47vh;
+  left: 82vh;
+  max-width: 300px;
+  z-index: -1;
+}
+
+#man-pic{
+  position: absolute;
+  top: 43vh;
+  left: 22vh;
+  max-width: 150px;
+  z-index: -1;
+}
+
+#shark-pic{
+  position: absolute;
+  top: 5vh;
+  left: 110vh;
+  max-width: 150px;
+  z-index: -1;
+}
+
+.hidden{
+  display: none;
+}
+
+.animal .info{
+  position:  relative;
+  z-index: auto;
+  margin-top: 5%;
+  margin-left: 13%;
+  margin-right: 13%;
+  width: 65vw;
+  height: 65vh;
+  text-align: center;
+
+}
+
+.modal-body{
+  font-size: 17px;
+}
+
+.modal-title{
+  font-size: 30px;
+}
+
+.modal-header{
+  background-color: green;
+  color: white;
+}
+
+.front, .back {
+  width:100%;
+  min-height:300px;
+  display: table;
+}
+
+.front h3, .back p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.fast {
+  animation-duration: .5s;
+}
+.flashcard {
+  cursor:pointer;
+}
+
+.bg-dark{
+  background-color: black!important;
+}
+
+.navbar-brand{
+  color: white;
+}
