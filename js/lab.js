@@ -6,6 +6,7 @@ document.addEventListener("mouseover", function( event ) {
 //jag input click toggles class
 $("#jag-pic").click(function(){
   $("#jaguar .info").toggleClass("hidden");
+//jag click plays sound
   $("#jagsound").trigger("play");
 })
 
