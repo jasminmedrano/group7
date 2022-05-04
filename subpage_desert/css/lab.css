@@ -7,6 +7,10 @@ body {
   color: green;
 }
 
+.logo{
+  width: 7vh;
+}
+
 #myCarousel {
   overflow: hidden;
   position: relative;
