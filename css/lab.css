@@ -56,17 +56,6 @@ body {
   box-sizing: border-box;
 }
 
-.email{
-  background-color: #232323;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
- label{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: white;
-}
-
 
 p{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -808,4 +797,73 @@ z-index: -1;
 
 .navbar-brand{
   color: white;
+}
+
+.email{
+  margin-top: 40px;
+  position: relative;
+  background-color: #232323;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+ label{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+}
+
+#gap-section1{
+  background-color: #81b977;
+}
+
+#form_question {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+#form_input, #form_message {
+  outline: none;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  height:35px;
+  width:350px;
+}
+
+#form_message {
+  height:50px;
+  width:235px;
+  margin-right: 0;
+}
+
+#submit_field {
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#form_button {
+  outline: none;
+  border: none;
+  height:50px;
+  width:115px;
+  font-size:14px;
+  background-color:green;
+  color:#fff;
+  transition: color 2s;
+  font-weight:bold;
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+
+#form_button:hover {
+  transition: .75s;
+  background-color: white;
+  color: green;
 }
