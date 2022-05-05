@@ -65,11 +65,11 @@ p{
 
 .circle  {
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10px;
   padding: 10px;
   position: relative;
-  height: 275px;
-  width: 800px;
+  width: 60vw;
+  height: 60vh;
 }
 
 
@@ -465,6 +465,13 @@ bottom: 0;
 left: 0;
 }
 
+#second{
+  background: #222;
+  display: inline-block;
+  padding: 0 15px;
+  position: sticky;
+  width: 100%;
+}
 
 .navbar {
   background: black;
@@ -681,9 +688,9 @@ z-index: -1;
 
 #pbear-pic{
   position: absolute;
-    top: 40vh;
-    left: 105vh;
-    max-width: 200px;
+    top: 50vh;
+    left: 100vh;
+    max-width: 150px;
     z-index: -1;
 }
 
@@ -714,7 +721,7 @@ z-index: -1;
 #bwhale-pic{
   position: absolute;
   top: 17vh;
-  left: 42vh;
+  left: 32vh;
   max-width: 400px;
   z-index: -1;
 }
@@ -722,7 +729,7 @@ z-index: -1;
 #vaq-pic{
   position: absolute;
   top: 47vh;
-  left: 82vh;
+  left: 72vh;
   max-width: 300px;
   z-index: -1;
 }
@@ -730,7 +737,7 @@ z-index: -1;
 #man-pic{
   position: absolute;
   top: 43vh;
-  left: 22vh;
+  left: 12vh;
   max-width: 150px;
   z-index: -1;
 }
@@ -738,7 +745,7 @@ z-index: -1;
 #shark-pic{
   position: absolute;
   top: 5vh;
-  left: 110vh;
+  left: 100vh;
   max-width: 150px;
   z-index: -1;
 }
