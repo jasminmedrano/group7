@@ -9,25 +9,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <title>Welcome</title>
   </head>
+  <!-- The Scrollable area -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+                <h5 class="modal-title">Welcome to our site!</h5>
+            </div>
+            <div class="modal-body">
+                <p2>This site includes sounds! If you would like to hear, make sure you turn on your sound to an appropiate level. If you choose not too, all is well, just keep the sound off; the page will work the same</p2>
+                <br>
+                <br>
+                <p>Thank you and enjoy!<p>
+            </div>
+
+        </div>
+    </div>
+  </div>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        	</button>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+              <li class="active"><a href="index.html"><img src="img/worldlogo.png" class="logo"></a></li>
+              <li><a href="#box1">Tropical</a></li>
+              <li><a href="#box2">Desert</a></li>
+              <li><a href="#box3">Tundra</a></li>
+              <li><a href="#box4">Marine</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="flashcards.html">Study</a></li>
+                <li><a href="creators.html">The Creators</a></li>
+        </div>
       </div>
-        <li class="active"><a href="https://jasminmedrano.github.io/group7/">Endangered Species & Ecosystems</a></li>
-        <li><a href="#box1">Tropical</a></li>
-        <li><a href="#box2">Desert</a></li>
-        <li><a href="#box3">Tundra</a></li>
-        <li><a href="#box4">Marine</a></li>
-  </nav>
+    </nav>
 
   <div id="description">
 		<h1 class="title">Our Site's Mission</h1>
@@ -47,7 +73,7 @@
         <div class="info hidden">
 
           <p id="jag-info">    <div class="circle">
-            <div class="column1">
+            <div class="column">
         <h2>Jaguar</h2>
       </div>
       <div class="column2">
@@ -78,8 +104,8 @@
         <div class="info hidden">
 
           <p id="ott-info">
-               <div class="circle2">
-            <div class="column3">
+            <div class="circle">
+         <div class="column">
        <h2>Giant Otter</h2>
      </div>
      <div class="column4">
@@ -108,12 +134,12 @@
         <input id="tap-pic" type="image" src="img/tapir.png">
         <div class="info hidden">
           <p id="tap-info">
-            <div class="circle3">
+            <div class="circle">
 
-    <div class="column5">
+    <div class="column">
       <h2>South American Tapir</h2>
     </div>
-    <div class="column6">
+    <div class="column2">
 
         I am a South American Tapir.
 <br>
@@ -144,12 +170,12 @@ We are known as the umbrella species because we have many habitats that include 
         <input id="b-pic" type="image" src="img/bird.png">
         <div class="info hidden">
           <p id="b-info">
-            <div class="circle4">
+            <div class="circle">
 
-                <div class="column7">
+                <div class="column">
                   <h2>Hyacinth Macaws</h2>
                 </div>
-                <div class="column8">
+                <div class="column2">
 
                   I am Hyacinth Macaw. I am native to Central and Eastern South America.
       <br>
@@ -171,7 +197,7 @@ We are known as the umbrella species because we have many habitats that include 
     </div>
 
   		<div id="description_tropical">
-  			<h1 class="title">Tropical</h1>
+  			<a class="title" href="subpage_tropical/index.html">Tropical</a>
   			<p>Deforestation is the leading cause of endangered species in tropical and jungle ecosystems.</p>
   		</div>
 
@@ -184,11 +210,11 @@ We are known as the umbrella species because we have many habitats that include 
         <input id=chet-pic type="image" src="img/cheetah.png">
         <div class="info hidden">
           <p id="chet-info">
-            <div class="circle5">
-            <div class="column9">
+            <div class="circle">
+            <div class="column">
             <h2>Saharan Cheetah</h2>
              </div>
-             <div class="column10">
+             <div class="column2">
             I am a Saharan Cheetah! I am mostly nocturnal.
             <br>
                  I am most active between sunset and early mornings.
@@ -217,11 +243,11 @@ We are known as the umbrella species because we have many habitats that include 
         <input id=ost-pic type="image" src="img/ostrich.png">
         <div class="info hidden">
           <p id="ost-info">
-            <div class="circle6">
-            <div class="column11">
+            <div class="circle">
+            <div class="column">
             <h2>North African Ostrich</h2>
              </div>
-             <div class="column12">
+             <div class="column2">
             I am a North African Ostrich! I am the largest living bird!
             <br>
                  I live from Western to Northeastern Africa.
@@ -248,11 +274,11 @@ We are known as the umbrella species because we have many habitats that include 
         <input id=turt-pic type="image" src="img/turtle.png">
         <div class="info hidden">
           <p id="turt-info">
-            <div class="circle7">
-  <div class="column13">
+            <div class="circle">
+  <div class="column">
   <h2>Egyptian Tortoise</h2>
    </div>
-   <div class="column14">
+   <div class="column2">
   I am a Egyptian Tortoise! I am native to Egypt, Libya, and Isreal!
   <br>
   I am the smallest tortoise in the Northern Hemisphere.
@@ -279,11 +305,11 @@ We are known as the umbrella species because we have many habitats that include 
         <input id=sheep-pic type="image" src="img/sheep.png">
         <div class="info hidden">
           <p id="sheep-info">
-            <div class="circle8">
-<div class="column15">
+            <div class="circle">
+<div class="column">
 <h2>Peninsular Bighorn Sheep</h2>
  </div>
- <div class="column16">
+ <div class="column2">
 I am a Peninsular Bighorn Sheep! I can go without water for extended periods of time.
 <br>
 I am the state mammal of Nevada.
@@ -304,7 +330,7 @@ Due to overhunting and habitat loss it is hard to find water resources nowadays.
     </div>
 
     		<div id="description_desert">
-    			<h1 class="title">Desert</h1>
+    			<a class="title" href="subpage_desert/index.html">Desert</a>
     			<p>Overhunting and habitat loss are the leading causes of endangered species in desert ecosystems.</p>
     		</div>
 
@@ -317,11 +343,11 @@ Due to overhunting and habitat loss it is hard to find water resources nowadays.
         <input id=pbear-pic type="image" src="img/polarbear.png">
         <div class="info hidden">
           <p id="pbear-info">
-            <div class="circle9">
-<div class="column17">
+            <div class="circle">
+<div class="column">
 <h2>Polar Bears</h2>
  </div>
- <div class="column18">
+ <div class="column2">
 I am a Polar Bear! I can run up to 24mph!
 <br>
 My species can weight up to 2,866 lbs for males and for females they can weigh up to 1,543 lbs.
@@ -352,11 +378,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=nar-pic type="image" src="img/narwal.png">
         <div class="info hidden">
           <p id="nar-info">
-            <div class="circle12">
-            <div class="column23">
+            <div class="circle">
+            <div class="column">
             <h2>Narwal</h2>
              </div>
-             <div class="column24">
+             <div class="column2">
             I am a Narwal.
             <br>
             My diet consists of green land halibut, arctic/polar cod, squid, and shrimp.
@@ -393,11 +419,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=bis-pic type="image" src="img/bison.png">
         <div class="info hidden">
           <p id="bis-info">
-            <div class="circle10">
-            <div class="column19">
+            <div class="circle">
+            <div class="column">
             <h2>Wood Bisons</h2>
              </div>
-             <div class="column20">
+             <div class="column2">
             I am a Wood Bison! I live anywhere that has a forest or mountains.
             <br>
             I can weigh up to 2,000 pounds!
@@ -430,11 +456,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=car-pic type="image" src="img/caribou.png">
         <div class="info hidden">
           <p id="car-info">
-            <div class="circle11">
-            <div class="column21">
+            <div class="circle">
+            <div class="column">
             <h2>Mountain Caribou</h2>
              </div>
-             <div class="column22">
+             <div class="column2">
             I am a Mountain Caribou.
             <br>
             I live in Western Alberta and British Columbia.
@@ -458,7 +484,7 @@ Currently, there is only 25,000 polar bears left in the world.
     </div>
 
     <div id="description_tundra">
-    			<h1 class="title">Tundra</h1>
+    			<a class="title" href="subpage_tundra/index.html">Tundra</a>
     			<p>Global warming and human-mining activity are the leading causes of endangered species in tundra ecosystems.</p>
     		</div>
 
@@ -471,11 +497,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=bwhale-pic type="image" src="img/bluewhale.png">
         <div class="info hidden">
           <p id="bwhale-info">
-            <div class="circle15">
-            <div class="column29">
+            <div class="circle">
+            <div class="column">
             <h2>Blue Whale</h2>
              </div>
-             <div class="column30">
+             <div class="column2">
             I am a Blue Whale.
             <br>
             I am the largest and loudest animal on the planet!
@@ -501,11 +527,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=vaq-pic type="image" src="img/vaquita.png">
         <div class="info hidden">
           <p id="vaq-info">
-            <div class="circle16">
-            <div class="column31">
+            <div class="circle">
+            <div class="column">
             <h2>Vaquita</h2>
              </div>
-             <div class="column32">
+             <div class="column2">
             I am a Vaquita.
             <br>
             I am porpoise with a dark coloration around the eyes and mouth.
@@ -533,11 +559,11 @@ Currently, there is only 25,000 polar bears left in the world.
         <input id=man-pic type="image" src="img/mantatee.png">
         <div class="info hidden">
           <p id="man-info">
-            <div class="circle14">
-<div class="column27">
+            <div class="circle">
+<div class="column">
 <h2>Florida Manatee</h2>
  </div>
- <div class="column28">
+ <div class="column2">
 I am a Florida Manatee.
 <br>
 I can weigh up to 1,000 pounds and grow up to 10 feet.
@@ -566,11 +592,11 @@ Which has made my species become very stressed and starve to death.
           <input id=shark-pic type="image" src="img/whaleshark.png">
           <div class="info hidden">
             <p id="shark-info">
-              <div class="circle13">
-              <div class="column25">
+              <div class="circle">
+              <div class="column">
               <h2>Whale Sharks</h2>
                </div>
-               <div class="column26">
+               <div class="column2">
               I am a Whale Shark.
               <br>
               I am the largest shark and one of the largest fishes alive!
@@ -593,42 +619,28 @@ Which has made my species become very stressed and starve to death.
 
 
     <div id="description_marine">
-    			<h1 class="title">Marine</h1>
+    			<a class="title" href="subpage_marine/index.html">Marine</a>
     			<p>Pollution, overfishing and climate change are the leading causes of endangered species in marine ecosystems.</p>
     		</div>
 
-    <div class="email">
-    <div style="font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; border-radius: 5px; padding: 1px 30px; width: 75%;">
+        <div class="email">
+        		    <div style="font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; border-radius: 5px; padding: 1px 30px; width: 75%;">
 
-       <form accept-charset="UTF-8" action="https://wildaid.org/protectwildlife/?gclid=Cj0KCQjwr-SSBhC9ARIsANhzu15k2hCVh_2mwTxBNpe9_UehNde7dBZ1TAWEEa7vawiPmN14dQ9RiIEaAigsEALw_wcB" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
-          <div>
-             <label>
-               Would you like to learn more?
-               <br>
-               Enter your full name</label>
-             <div>
-                <input style="margin-top: 5px; background-color: #fff; height:35px; width:235px;" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
-             </div>
-          </div>
-          <br>
-          <div>
-             <label>Email address</label>
-             <div>
-                <input style="margin-top: 5px;background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
-             </div>
-          </div>
-          <br>
-          <div>
-             <label>On a scale of 1 to 10 how informational was our website?</label>
-             <div>
-                <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
-             </div>
-         </div>
-          <input type="hidden" name="utf8" value="✓">
-          <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
-       </form>
-    </div>
-</div>
-
+        		       <form accept-charset="UTF-8" action="https://wildaid.org/protectwildlife/?gclid=Cj0KCQjwr-SSBhC9ARIsANhzu15k2hCVh_2mwTxBNpe9_UehNde7dBZ1TAWEEa7vawiPmN14dQ9RiIEaAigsEALw_wcB" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
+                     <h3 id="form_question">Would you like to learn more?</h3>
+                      <div>
+        		           <input id="form_input" type="text" name="first_name" placeholder="Full Name" required="required">
+        		          </div>
+        		          <div>
+        		           <input id="form_input" type="email" name="email" placeholder="Email address" required="required">
+        		         </div>
+        		         <div id="submit_field">
+        		          <textarea id="form_message" type="text" name="message" placeholder="On a scale of 1 to 10 how informational was our website?" required="required"></textarea>
+        		          <input type="hidden" name="utf8" value="✓">
+        		          <button id="form_button" type="submit">SUBMIT</button>
+                    </div>
+        		       </form>
+        		    </div>
+        		</div>
 </body>
 </html>
