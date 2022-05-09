@@ -66,10 +66,11 @@ p{
 .circle  {
   background-color: white;
   border-radius: 10px;
+
   padding: 10px;
   position: relative;
   width: 60vw;
-  height: 60vh;
+  height:40vh;
   margin-left: -5%;
 }
 
