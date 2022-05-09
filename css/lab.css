@@ -14,6 +14,17 @@ body {
   width: 7vh;
 }
 
+#jag-close, #ott-close, #tap-close , #b-close , #ost-close, #chet-close,
+#turt-close, #sheep-close, #pbear-close , #nar-close,
+#bis-close, #car-close, #bwhale-close, #vaq-close, #man-close, #shark-close{
+  position: relative;
+  bottom: -40px;
+  background-color: green;
+  color: white;
+
+
+}
+
 #description {
   width: 70vw;
   text-align: left;
@@ -66,7 +77,6 @@ p{
 .circle  {
   background-color: white;
   border-radius: 10px;
-
   padding: 10px;
   position: relative;
   width: 60vw;
