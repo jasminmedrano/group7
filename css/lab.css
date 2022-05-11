@@ -489,15 +489,13 @@ font-size: 20px;
 
 .creatorbio{
   position: absolute;
-  bottom: 80px;
+
   padding-left: 5px;
   padding-right: 5px;
   overflow-wrap: break-word;
   background-color: white;
   width: 50em;
   height: auto;
-  border: 5px green dashed;
-
 
 }
 #bottom {
